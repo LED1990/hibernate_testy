@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 10:38:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.DaneKontaktowe" table="DANEKONTAKTOWE">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" >
+                <param name="sequence">danekontaktowe_id_seq</param>
+            </generator>
+        </id>
+        <property name="nrTelefonu" type="java.lang.String">
+            <column name="NRTELEFONU" length="30"/>
+        </property>
+        <property name="stronaWww" type="java.lang.String">
+            <column name="STRONAWWW" length="256" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" length="50" />
+        </property>
+        <property name="fax" type="java.lang.String">
+            <column name="FAX" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

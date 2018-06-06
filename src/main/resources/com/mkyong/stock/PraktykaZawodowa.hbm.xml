@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 12:29:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.PraktykaZawodowa" table="PRAKTYKAZAWODOWA">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+                <param name="sequence">praktykazawodowa_id_seq</param>
+            </generator>
+        </id>
+        <property name="idPraktyki" type="int">
+            <column name="IDPRAKTYKI" />
+        </property>
+        <property name="regon" type="java.lang.String">
+            <column name="REGON" />
+        </property>
+        <property name="nrKsiegiRejestrowej" type="java.lang.String">
+            <column name="NRKSIEGIREJESTROWEJ" length="50" index="PRAKTYKAZAWODOWA_NRKSIEGIREJESTROWEJ_INDEX" />
+        </property>
+        <property name="nazwaOrganuRejestrowego" type="java.lang.String">
+            <column name="NAZWAORGANUREJESTROWEGO" length="50" index="PRAKTYKAZAWODOWA_NAZWAORGANUREJESTROWEGO_INDEX" />
+        </property>
+        <many-to-one name="praktykaZawodowaOsoba" class="smz.zgl.daneref.ud.PraktykaZawodowaOsoba" fetch="join" lazy="false" cascade="all">
+            <column name="PRAKTYKAZAWODOWAOSOBA" index="PRAKTYKAZAWODOWA_PRAKTYKAZAWODOWAOSOBA_INDEX" />
+        </many-to-one>
+        <property name="nazwa" type="java.lang.String">
+            <column name="NAZWA" length="256" index="PRAKTYKAZAWODOWA_NAZWA_INDEX" />
+        </property>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" lazy="false" cascade="all">
+            <column name="ADRES" index="PRAKTYKAZAWODOWA_ADRES_INDEX" />
+        </many-to-one>
+        <property name="nrTelefonu" type="java.lang.String">
+            <column name="NRTELEFONU" length="30" />
+        </property>
+        <property name="kodIdentyfikujacyMiejsceSwiadczenPraktyki" type="java.lang.String">
+            <column name="KODIDMIEJSCASWIADCZEN" length="255"/>
+        </property>
+        <property name="kluczPraktyki" type="java.lang.String">
+            <column name="kluczpraktyki" length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>

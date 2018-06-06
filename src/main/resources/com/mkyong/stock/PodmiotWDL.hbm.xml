@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 12:29:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.PodmiotWDL" table="PODMIOTWDL">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+                <param name="sequence">podmiotwdl_id_seq</param>
+            </generator>
+        </id>
+        <property name="idPodmiotu" type="java.lang.Integer">
+            <column name="IDPODMIOTU" />
+        </property>
+        <property name="nazwa" type="java.lang.String">
+            <column name="NAZWA" length="256" index="PODMIOTWDL_NAZWA_INDEX" />
+        </property>
+        <property name="status">
+            <column name="status" not-null="true" default="'AKTUALNY'" />
+            <type name="org.hibernate.type.EnumType">
+                <param name="type">12</param>
+                <param name="enumClass">smz.zgl.daneref.ud.Status</param>
+            </type>
+        </property>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" cascade="all" lazy="false">
+            <column name="ADRES" index="PODMIOTWDL_ADRES_INDEX" />
+        </many-to-one>
+        <property name="numerKsiegiRejestrowej" type="java.lang.String">
+            <column name="NUMERKSIEGIREJESTROWEJ" length="50" index="PODMIOTWDL_NUMERKSIEGIREJESTROWEJ_INDEX" />
+        </property>
+        <property name="kodOrganuRejestrowego" type="java.lang.String">
+            <column name="KODORGANUREJESTROWEGO" />
+        </property>
+        <property name="numerRegon" type="java.lang.String">
+            <column name="NUMERREGON" index="PODMIOTWDL_NUMERREGON_INDEX" />
+        </property>
+        <property name="kodFormyOrganizacyjnoPrawnej" type="java.lang.String">
+            <column name="KODFORMYORGANIZACYJNOPRAWNEJ" length="50" />
+        </property>
+        <property name="nazwaPodmiotuTworzacego" type="java.lang.String">
+            <column name="NAZWAPODMIOTUTWORZACEGO" length="256" />
+        </property>
+        <property name="kodPodmiotuTworzacego" type="java.lang.String">
+            <column name="KODPODMIOTUTWORZACEGO" length="50" />
+        </property>
+        <set name="przedsiebiorstwoPodmiotuLeczniczego" inverse="false" table="PRZEDSIEBIORSTWOPODMIOTULECZNICZEGO" lazy="false" cascade="all" fetch="join">
+            <key>
+                <column name="ID_PODMIOT_WDL" />
+            </key>
+            <one-to-many class="smz.zgl.daneref.ud.PrzedsiebiorstwoPodmiotuLeczniczego" />
+        </set>
+        <many-to-one name="daneKontaktowe" class="smz.zgl.daneref.DaneKontaktowe" fetch="join" lazy="false" cascade="all">
+            <column name="DANEKONTAKTOWE" index="PODMIOTWDL_DANEKONTAKTOWE_INDEX" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

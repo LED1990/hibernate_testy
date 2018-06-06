@@ -1,0 +1,233 @@
+<uslugodawcy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uslugodawca>
+        <nazwa>Moh'd Ali  MOH'D Al-Hameri</nazwa>
+        <praktyka>
+            <dataRejestracji>2012-04-30</dataRejestracji>
+            <dataWykreslenia/>
+            <identyfikatorPraktykiZawodowej root="root" extension="extension">1269016</identyfikatorPraktykiZawodowej>
+            <kodFormyOrganizacyjnoPrawnej>
+                <kod/>
+                <opis/>
+            </kodFormyOrganizacyjnoPrawnej>
+            <kodOrganuRejestrowego>
+                <kod>50</kod>
+                <opis>Okręgowa Izba Lekarska w Białymstoku</opis>
+            </kodOrganuRejestrowego>
+            <nazwaOrganuRejestrowego>Okręgowa Rada Lekarska</nazwaOrganuRejestrowego>
+            <nrKsiegiRejestrowej>000000028910</nrKsiegiRejestrowej>
+            <regon/>
+            <typOrganuRejstrowego>OKREGOWA_RADA_LEKARSKA</typOrganuRejstrowego>
+            <osoby>
+                <osoba>
+                    <imie>Moh'd Ali  MOH'D</imie>
+                    <nazwisko>Al-Hameri</nazwisko>
+                    <nip>9660291592</nip>
+                    <nrPWZ>2369534</nrPWZ>
+                    <okresDzialalnosci>
+                        <dataKoncaZawieszenia/>
+                        <dataPoczatkuZawieszenia/>
+                        <dataRozpoczecia>1998.10.28</dataRozpoczecia>
+                        <dataZakonczenia/>
+                    </okresDzialalnosci>
+                    <specjalizacje>Położnictwo i ginekologia (II st.)</specjalizacje>
+                    <rodzajeDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie położnicze i ginekologiczne .</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <adres>
+                                        <gmina>Dąbrowa Białostocka - miasto</gmina>
+                                        <kodPocztowy>16-200</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011014</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Dąbrowa Białostocka</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>1</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>3-go Maja</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon/>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie położnicze i ginekologiczne.</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <adres>
+                                        <gmina>Suchowola - miasto</gmina>
+                                        <kodPocztowy>16-150</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011094</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Suchowola</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>21</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>ul. Goniądzka</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon>601449821</telefon>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne>diagnostyka ginekologiczna i położnicza</swiadczeniaDiagnostyczne>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie ginekologiczne</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <adres>
+                                        <gmina>Sokółka - gmina miejsko-wiejsk</gmina>
+                                        <kodPocztowy>16-100</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011083</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Sokółka</miejscowosc>
+                                        <nazwaPoczty>Sokołka</nazwaPoczty>
+                                        <nrDomu>2</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>Joachima Lelewela</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon/>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                    </rodzajeDzialalnosci>
+                </osoba>
+            </osoby>
+        </praktyka>
+    </uslugodawca>
+    <uslugodawca>
+        <nazwa>Krystyna Jadwiga Sarara</nazwa>
+        <praktyka>
+            <dataRejestracji>2012-02-10</dataRejestracji>
+            <dataWykreslenia/>
+            <identyfikatorPraktykiZawodowej root="root" extension="extension">1269045</identyfikatorPraktykiZawodowej>
+            <kodFormyOrganizacyjnoPrawnej>
+                <kod/>
+                <opis/>
+            </kodFormyOrganizacyjnoPrawnej>
+            <kodOrganuRejestrowego>
+                <kod>11</kod>
+                <opis>Okręgowa Izba Pielęgniarek i Położnych w Jeleniej Górze</opis>
+            </kodOrganuRejestrowego>
+            <nazwaOrganuRejestrowego>Okręgowa Rada Pielęgniarek i Położnych</nazwaOrganuRejestrowego>
+            <nrKsiegiRejestrowej>000000026856</nrKsiegiRejestrowej>
+            <regon/>
+            <typOrganuRejstrowego>OKREGOWA_RADA_PIELEGNIAREK</typOrganuRejstrowego>
+            <osoby>
+                <osoba>
+                    <imie>Krystyna Jadwiga</imie>
+                    <nazwisko>Sarara</nazwisko>
+                    <nip>6111259017</nip>
+                    <nrPWZ>1103816P</nrPWZ>
+                    <okresDzialalnosci>
+                        <dataKoncaZawieszenia/>
+                        <dataPoczatkuZawieszenia/>
+                        <dataRozpoczecia>2012.03.01</dataRozpoczecia>
+                        <dataZakonczenia/>
+                    </okresDzialalnosci>
+                    <specjalizacje/>
+                    <rodzajeDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>93</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne>-wykonywanie ekg
+                                -oznaczenie glikemii za pomocą glukometru</swiadczeniaDiagnostyczne>
+                            <swiadczeniaInne>-wykonywanie szczepień ochronnych</swiadczeniaInne>
+                            <swiadczeniaLecznicze>-zakładanie cewnika do pęcherza moczowego i usuwanie cewnika
+                                -płukanie pęcherza moczowego
+                                -wykonywanie zabiegów doodbytniczych
+                                -wykonywanie kaniulacji żył obwodowych</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia>-prowadzenie poradnictwa w zakresie samoopieki w życiu z chorobą i niepełnosprawnością w stosunku do człowieka chorego i jego rodziny</swiadczeniaPromocjiZdrowia>
+                            <swiadczeniaRatunkowe>-ocena stanu pacjenta w celu ustalenia postępow. i podjęcia decyzji o prowadzeniu lub odstąpieniu od medycznych czynności ratunkowych
+                                -układanie pacjenta w pozycji właściwej dla jego stanu zdrowia</swiadczeniaRatunkowe>
+                            <swiadczeniaRehabilitacyjne>-prowadzenie usprawniania ruchowego</swiadczeniaRehabilitacyjne>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <adres>
+                                        <gmina>Jelenia Góra - gmina miejska</gmina>
+                                        <kodPocztowy>58-506</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>0261011</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Jelenia Góra</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>6</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>Jelenia Góra</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>Ogińskiego</ulica>
+                                        <wojewodztwo>DOLNOŚLĄSKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon>075 75 37 100</telefon>
+                                        <www>www.spzoz.jgora.pl</www>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                    </rodzajeDzialalnosci>
+                </osoba>
+            </osoby>
+        </praktyka>
+    </uslugodawca>
+</uslugodawcy>

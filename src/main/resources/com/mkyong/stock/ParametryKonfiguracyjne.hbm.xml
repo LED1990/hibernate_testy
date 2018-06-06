@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-13 08:11:04 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.ParametryKonfiguracyjne" table="PARAMETRY_KONFIGURACYJNE">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+            	<param name="sequence">parametry_konfiguracyjne_id_seq</param>
+            </generator>
+        </id>
+        <property name="parametr" type="java.lang.String">
+            <column name="PARAMETR" />
+        </property>
+        <property name="wartosc" type="java.lang.String">
+            <column name="WARTOSC" />
+        </property>
+        <property name="sekcja" type="java.lang.String">
+            <column name="SEKCJA" />
+        </property>
+        <property name="opis" type="java.lang.String">
+            <column name="OPIS" />
+        </property>
+    </class>
+</hibernate-mapping>

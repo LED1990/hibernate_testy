@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 10:38:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.DaneOsobowe" table="DANEOSOBOWE">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+                        <generator class="identity" >
+            	<param name="sequence">daneosobowe_id_seq</param>
+            </generator>
+        </id>
+        <property name="nazwisko" type="java.lang.String">
+            <column name="NAZWISKO" length="50" index="DANEOSOBOWE_IMIE_INDEX" />
+        </property>
+        <property name="imie" type="java.lang.String">
+            <column name="IMIE" length="50" index="DANEOSOBOWE_NAZWISKO_INDEX" />
+        </property>
+        <many-to-one name="plec" class="smz.defSlownikow.slowniki.SPlec" lazy="false" fetch="join">
+            <column name="PLEC" index="DANEOSOBOWE_PLEC_INDEX" />
+        </many-to-one>
+        <property name="dataUrodzenia" type="java.util.Date">
+            <column name="DATAURODZENIA" />
+        </property>
+        <property name="nrPesel" type="java.lang.String">
+            <column name="NRPESEL" index="DANEOSOBOWE_NRPESEL_INDEX" />
+        </property>
+        <property name="nrIdentyfikacyjnyInnegoDokumentu" type="java.lang.String">
+            <column name="NRIDENTYFIKACYJNYINNEGODOKUMENTU" length="50" index="DANEOSOBOWE_NRIDENTYFIKACYJNYINNEGODOKUMENTU_INDEX" />
+        </property>
+        <many-to-one name="obywatelstwo" class="smz.defSlownikow.slowniki.SKraj" fetch="join">
+            <column name="OBYWATELSTWO" index="DANEOSOBOWE_OBYWATELSTWO_INDEX" />
+        </many-to-one>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" cascade="all" lazy="false">
+            <column name="ADRES" index="DANEOSOBOWE_ADRES_INDEX" />
+        </many-to-one>
+        <property name="bezdomny" type="java.lang.Boolean" access="field">
+            <column name="BEZDOMNY" />
+        </property>
+        <many-to-one name="daneKontaktowe" class="smz.zgl.daneref.DaneKontaktowe" fetch="join" cascade="all" lazy="false">
+            <column name="DANEKONTAKTOWE" index="DANEOSOBOWE_DANEKONTAKTOWE_INDEX" />
+        </many-to-one>
+        <!--<many-to-one name="daneOsoboweDepersonalizacja" class="smz.zgl.daneref.DaneOsoboweDepersonalizacja" fetch="join" cascade="all" lazy="false">-->
+            <!--<column name="DANEOSOBOWE_DP_ID" />-->
+        <!--</many-to-one>-->
+    </class>
+</hibernate-mapping>

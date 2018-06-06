@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 10:38:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.Adres" table="ADRES">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+                <param name="sequence">adres_id_seq</param>
+            </generator>
+        </id>
+        <!--   <many-to-one name="kodPocztowy" class="smz.zgl.wspolne.add.KodPocztowy" fetch="join">
+              <column name="KODPOCZTOWY" />
+          </many-to-one> -->
+
+
+        <property name="kodPocztowy" type="java.lang.String">
+            <column name="KODPOCZTOWY" index="ADRES_KODPOCZTOWY_INDEX" />
+        </property>
+
+        <property name="nazwaPoczty" type="java.lang.String">
+            <column name="NAZWAPOCZTY" length="50" />
+        </property>
+        <!-- <many-to-one name="wojewodztwo" class="smz.zgl.wspolne.add.PLAdresWojewodztwo" fetch="join">
+            <column name="WOJEWODZTWO" />
+        </many-to-one> -->
+
+        <property name="wojewodztwo" type="java.lang.String">
+            <column name="WOJEWODZTWO" length="50" index="ADRES_WOJEWODZTWO_INDEX" />
+        </property>
+
+        <property name="powiat" type="java.lang.String">
+            <column name="POWIAT" length="50" index="ADRES_POWIAT_INDEX" />
+        </property>
+        <property name="gmina" type="java.lang.String">
+            <column name="GMINA" length="50" />
+        </property>
+
+        <property name="miejscowosc" type="java.lang.String">
+            <column name="MIEJSCOWOSC" length="50" index="ADRES_MIEJSCOWOSC_INDEX" />
+        </property>
+
+        <!--     <many-to-one name="miejscowosc" class="smz.zgl.wspolne.add.AdresMiejscowosc" fetch="join">
+                <column name="MIEJSCOWOSC" />
+            </many-to-one> -->
+        <!--  <many-to-one name="ulica" class="smz.zgl.wspolne.add.Ulica" fetch="join">
+             <column name="ULICA" />
+         </many-to-one> -->
+        <property name="ulica" type="java.lang.String">
+            <column name="ULICA" length="50" />
+        </property>
+        <property name="nrDomu" type="java.lang.String">
+            <column name="NRDOMU" length="50" />
+        </property>
+        <property name="nrLokalu" type="java.lang.String">
+            <column name="NRLOKALU" length="50" />
+        </property>
+        <property name="kraj" type="java.lang.String">
+            <column name="KRAJ" />
+        </property>
+        <!--  <many-to-one name="kraj" class="smz.zgl.wspolne.add.AdresKraj" fetch="join">
+             <column name="KRAJ" />
+         </many-to-one> -->
+        <property name="kodTerytorialnyMsw" type="java.lang.String">
+            <column name="KODTERYTORIALNYMSW" />
+        </property>
+        <!--         <property name="typAdresu"> -->
+        <!--             <column name="TYPADRESU" /> -->
+        <!--             <type name="org.hibernate.type.EnumType"> -->
+        <!--                 <param name="type">12</param> -->
+        <!--                 <param name="enumClass">smz.zgl.daneref.enums.TypAdresu</param> -->
+        <!--             </type> -->
+        <!--         </property> -->
+        <property name="kodTerytTerc" type="java.lang.String">
+            <column name="KODTERYTTERC" length="50" index="ADRES_KODTERYTTERC_INDEX" />
+        </property>
+        <property name="kodTerytSimc" type="java.lang.String">
+            <column name="KODTERYTSIMC" length="50" index="ADRES_KODTERYTSIMC_INDEX" />
+        </property>
+    </class>
+</hibernate-mapping>

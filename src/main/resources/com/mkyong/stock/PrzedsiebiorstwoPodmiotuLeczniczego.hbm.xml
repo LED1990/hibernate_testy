@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 12:29:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.PrzedsiebiorstwoPodmiotuLeczniczego" table="PRZEDSIEBIORSTWOPODMIOTULECZNICZEGO">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+            	<param name="sequence">przedsiebiorstwopodmiotuleczniczego_id_seq</param>
+            </generator>
+        </id>
+        <property name="rodzajDzialalnosciLeczniczej" type="java.lang.String">
+            <column name="RODZAJDZIALALNOSCILECZNICZEJ" length="256" />
+        </property>
+        <property name="kodRodzajuDzialalnosciLeczniczej" type="java.lang.String">
+            <column name="KODRODZAJUDZIALALNOSCILECZNICZEJ" length="50" />
+        </property>
+        <property name="idPrzedsiebiorstwa" type="java.lang.Integer">
+            <column name="idPrzedsiebiorstwa" />
+        </property>
+        <property name="status">
+            <column name="status" not-null="true" default="'AKTUALNY'" />
+            <type name="org.hibernate.type.EnumType">
+                <param name="type">12</param>
+                <param name="enumClass">smz.zgl.daneref.ud.Status</param>
+            </type>
+        </property>
+        <!-- jednostkaOrganizacyjna musi miec cascade="all", aby poprawnie dzialal import -->
+        <set name="jednostkaOrganizacyjna" inverse="false" table="JEDNOSTKAORGANIZACYJNA" lazy="true" fetch="join" cascade="all">
+            <key>
+                <column name="ID_PRZEDSIEBIORSTWO_PODMIOTU_LECZNICZEGO" />
+            </key>
+            <one-to-many class="smz.zgl.daneref.ud.JednostkaOrganizacyjna" />
+        </set>
+        <many-to-one name="daneKontaktowe" class="smz.zgl.daneref.DaneKontaktowe" fetch="join" cascade="all" lazy="false">
+            <column name="DANEKONTAKTOWE" index="PRZEDSIEBIORSTWOPODMIOTULECZNICZEGO_DANEKONTAKTOWE_INDEX" />
+        </many-to-one>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" lazy="false" cascade="all">
+            <column name="ADRES" index="PRZEDSIEBIORSTWOPODMIOTULECZNICZEGO_ADRES_INDEX" />
+        </many-to-one>
+        <many-to-one name="podmiotWDL" class="smz.zgl.daneref.ud.PodmiotWDL" fetch="join" lazy="false" cascade="all">
+            <column name="ID_PODMIOT_WDL" index="PRZEDSIEBIORSTWOPODMIOTULECZNICZEGO_ID_PODMIOT_WDL_INDEX" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

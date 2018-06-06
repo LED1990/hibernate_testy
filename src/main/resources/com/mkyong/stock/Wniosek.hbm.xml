@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-12 13:43:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.adm.Wniosek" table="WNIOSEK" check="DN IS NOT NULL AND DN &lt;&gt; ''">
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="identity" >
+            	<param name="sequence">wniosek_id_seq</param>
+            </generator>
+        </id>
+        <property name="idWniosku" type="java.lang.String">
+            <column name="IDWNIOSKU" index="WNIOSEK_IDWNIOSKU_INDEX" />
+        </property>
+        <property name="uid" type="java.lang.String">
+            <column name="UID" />
+        </property>
+        <property name="role" type="text">
+            <column name="ROLE" />
+        </property>
+        <property name="imie" type="java.lang.String">
+            <column name="IMIE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" index="WNIOSEK_STATUS_INDEX" />
+        </property>
+        <property name="przyczynaOdrzucenia" type="java.lang.String">
+            <column name="PRZYCZYNAODRZUCENIA" length="2000" />
+        </property>
+        <property name="telefon" type="java.lang.String">
+            <column name="TELEFON" />
+        </property>
+         <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+         <property name="nrPWZ" type="java.lang.String">
+            <column name="NRPWZ" />
+        </property>
+        <property name="nazwisko" type="java.lang.String">
+            <column name="NAZWISKO" />
+        </property>
+        <property name="dn" type="java.lang.String">
+            <column name="DN" index="WNIOSEK_DN_INDEX" />
+        </property>
+        <property name="administratorRegionalny" type="boolean">
+            <column name="ADMINISTRATORREGIONALNY" default="FALSE" index="WNIOSEK_ADMINISTRATORREGIONALNY_INDEX" />
+        </property>
+        <property name="administratorLokalny" type="boolean">
+            <column name="ADMINISTRATORLOKALNY" index="WNIOSEK_ADMINISTRATORLOKALNY_INDEX" />
+        </property>
+        <many-to-one name="uslugowawca" lazy="false"  class="smz.zgl.daneref.ud.Uslugodawca" fetch="join"  >
+            <column name="USLUGOWAWCA" index="WNIOSEK_USLUGOWAWCA_INDEX" />
+        </many-to-one>
+        <many-to-one name="organizacja" lazy="false"  class="smz.zgl.wspolne.Organizacja" fetch="join"  >
+            <column name="ORGANIZACJA" index="WNIOSEK_ORGANIZACJA_INDEX" />
+        </many-to-one>
+        <set name="zalaczniki" table="ZALACZNIK_WNIOSKU" lazy="false" fetch="join" cascade="all">
+        	<key>
+        		<column name="WNIOSEK" not-null="true"/>
+        	</key>
+        	<one-to-many class="smz.adm.ZalacznikWniosku"/>
+        </set>
+    </class>
+</hibernate-mapping>

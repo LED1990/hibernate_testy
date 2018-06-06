@@ -1,0 +1,308 @@
+<uslugodawcy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uslugodawca>
+        <nazwa>Moh'd Ali  MOH'D Al-Hameri</nazwa>
+        <praktyka>
+            <dataRejestracji>2012-04-30</dataRejestracji>
+            <dataWykreslenia/>
+            <identyfikatorPraktykiZawodowej root="root" extension="extension">1269016</identyfikatorPraktykiZawodowej>
+            <kodFormyOrganizacyjnoPrawnej>
+                <kod/>
+                <opis/>
+            </kodFormyOrganizacyjnoPrawnej>
+            <kodOrganuRejestrowego>
+                <kod>54</kod>
+                <opis>Okręgowa Izba Lekarska w Białymstoku</opis>
+            </kodOrganuRejestrowego>
+            <nazwaOrganuRejestrowego>Okręgowa Rada Lekarska</nazwaOrganuRejestrowego>
+            <nrKsiegiRejestrowej>000000026830</nrKsiegiRejestrowej>
+            <regon/>
+            <typOrganuRejstrowego>OKREGOWA_RADA_LEKARSKA</typOrganuRejstrowego>
+            <osoby>
+                <osoba>
+                    <imie>Moh'd Ali  MOH'D</imie>
+                    <nazwisko>Al-Hameri</nazwisko>
+                    <nip>9660291592</nip>
+                    <nrPWZ>2369534</nrPWZ>
+                    <okresDzialalnosci>
+                        <dataKoncaZawieszenia/>
+                        <dataPoczatkuZawieszenia/>
+                        <dataRozpoczecia>1998.10.28</dataRozpoczecia>
+                        <dataZakonczenia/>
+                    </okresDzialalnosci>
+                    <specjalizacje>Położnictwo i ginekologia (II st.)</specjalizacje>
+                    <rodzajeDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie położnicze i ginekologiczne .</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <kodIdentyfikujacyMiejsceSwiadczenPraktyki>001</kodIdentyfikujacyMiejsceSwiadczenPraktyki>
+                                    <adres>
+                                        <gmina>Dąbrowa Białostocka - miasto</gmina>
+                                        <kodPocztowy>16-200</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011014</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Dąbrowa Białostocka</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>1</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>3-go Maja</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon/>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie położnicze i ginekologiczne.</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <kodIdentyfikujacyMiejsceSwiadczenPraktyki>002</kodIdentyfikujacyMiejsceSwiadczenPraktyki>
+                                    <adres>
+                                        <gmina>Suchowola - miasto</gmina>
+                                        <kodPocztowy>16-150</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011094</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Suchowola</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>21</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>ul. Goniądzka</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon>601449821</telefon>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne>diagnostyka ginekologiczna i położnicza</swiadczeniaDiagnostyczne>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie ginekologiczne</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <kodIdentyfikujacyMiejsceSwiadczenPraktyki>002</kodIdentyfikujacyMiejsceSwiadczenPraktyki>
+                                    <adres>
+                                        <gmina/>
+                                        <kodPocztowy>16-100</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2011083</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Sokółka</miejscowosc>
+                                        <nazwaPoczty>Sokołka</nazwaPoczty>
+                                        <nrDomu>2</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>sokólski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>Joachima Lelewela</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon/>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                    </rodzajeDzialalnosci>
+                </osoba>
+            </osoby>
+        </praktyka>
+    </uslugodawca>
+    <uslugodawca>
+        <nazwa>Andrzej  Andrejuk</nazwa>
+        <praktyka>
+            <dataRejestracji>2012-04-30</dataRejestracji>
+            <dataWykreslenia/>
+            <identyfikatorPraktykiZawodowej root="root" extension="extension">1269041</identyfikatorPraktykiZawodowej>
+            <kodFormyOrganizacyjnoPrawnej>
+                <kod/>
+                <opis/>
+            </kodFormyOrganizacyjnoPrawnej>
+            <kodOrganuRejestrowego>
+                <kod>50</kod>
+                <opis>Okręgowa Izba Lekarska w Białymstoku</opis>
+            </kodOrganuRejestrowego>
+            <nazwaOrganuRejestrowego>Okręgowa Rada Lekarska</nazwaOrganuRejestrowego>
+            <nrKsiegiRejestrowej>000000028921</nrKsiegiRejestrowej>
+            <regon/>
+            <typOrganuRejstrowego>OKREGOWA_RADA_LEKARSKA</typOrganuRejstrowego>
+            <osoby>
+                <osoba>
+                    <imie>Andrzej </imie>
+                    <nazwisko>Andrejuk</nazwisko>
+                    <nip>9660859928</nip>
+                    <nrPWZ>1173340</nrPWZ>
+                    <okresDzialalnosci>
+                        <dataKoncaZawieszenia/>
+                        <dataPoczatkuZawieszenia/>
+                        <dataRozpoczecia>2012.04.04</dataRozpoczecia>
+                        <dataZakonczenia/>
+                    </okresDzialalnosci>
+                    <specjalizacje>Ortopedia i traumatologia (II st.)</specjalizacje>
+                    <rodzajeDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>3</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>99</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze>leczenie ortopedyczne</swiadczeniaLecznicze>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <kodIdentyfikujacyMiejsceSwiadczenPraktyki>002</kodIdentyfikujacyMiejsceSwiadczenPraktyki>
+                                    <adres>
+                                        <gmina>Bielsk Podlaski - gmina miejska</gmina>
+                                        <kodPocztowy/>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>2003011</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Bielsk Podlaski</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>3A</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>bielski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>Rejonowa</ulica>
+                                        <wojewodztwo>PODLASKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon/>
+                                        <www/>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                    </rodzajeDzialalnosci>
+                </osoba>
+            </osoby>
+        </praktyka>
+    </uslugodawca>
+    <uslugodawca>
+        <nazwa>Olga Kurdej</nazwa>
+        <praktyka>
+            <dataRejestracji>2012-02-08</dataRejestracji>
+            <dataWykreslenia/>
+            <identyfikatorPraktykiZawodowej root="root" extension="extension">1269017</identyfikatorPraktykiZawodowej>
+            <kodFormyOrganizacyjnoPrawnej>
+                <kod/>
+                <opis/>
+            </kodFormyOrganizacyjnoPrawnej>
+            <kodOrganuRejestrowego>
+                <kod>04</kod>
+                <opis>Okręgowa Izba Pielęgniarek i Położnych w Bydgoszczy</opis>
+            </kodOrganuRejestrowego>
+            <nazwaOrganuRejestrowego>OGLA -- NAZWA ORGANU</nazwaOrganuRejestrowego>
+            <nrKsiegiRejestrowej>000000026830</nrKsiegiRejestrowej>
+            <regon/>
+            <typOrganuRejstrowego>OKREGOWA_RADA_PIELEGNIAREK</typOrganuRejstrowego>
+            <osoby>
+                <osoba>
+                    <imie>Olga</imie>
+                    <nazwisko>Kurdej</nazwisko>
+                    <nip>5581737755</nip>
+                    <nrPWZ>0407298P</nrPWZ>
+                    <okresDzialalnosci>
+                        <dataKoncaZawieszenia/>
+                        <dataPoczatkuZawieszenia/>
+                        <dataRozpoczecia>2012.01.02</dataRozpoczecia>
+                        <dataZakonczenia/>
+                    </okresDzialalnosci>
+                    <specjalizacje/>
+                    <rodzajeDzialalnosci>
+                        <rodzajDzialalnosci>
+                            <dziedzinaMedycyny/>
+                            <kodRodzajuDzialalnosciLeczniczej>1</kodRodzajuDzialalnosciLeczniczej>
+                            <kodRodzajuPraktyki>93</kodRodzajuPraktyki>
+                            <swiadczeniaDiagnostyczne/>
+                            <swiadczeniaInne/>
+                            <swiadczeniaLecznicze/>
+                            <swiadczeniaPromocjiZdrowia/>
+                            <swiadczeniaRatunkowe/>
+                            <swiadczeniaRehabilitacyjne/>
+                            <uprawnieniaDoWydawaniaOrzeczen/>
+                            <adresyUdzielaniaSwiadczen>
+                                <adresUdzielaniaSwiadczen>
+                                    <kodIdentyfikujacyMiejsceSwiadczenPraktyki>002</kodIdentyfikujacyMiejsceSwiadczenPraktyki>
+                                    <adres>
+                                        <gmina>Nakło nad Notecią - miasto</gmina>
+                                        <kodPocztowy>89-100</kodPocztowy>
+                                        <kodTerytorialnyMsw/>
+                                        <kodTerytSimc/>
+                                        <kodTerytTerc>0410034</kodTerytTerc>
+                                        <kraj>Polska</kraj>
+                                        <miejscowosc>Nakło nad Notecią</miejscowosc>
+                                        <nazwaPoczty/>
+                                        <nrDomu>7</nrDomu>
+                                        <nrLokalu/>
+                                        <powiat>nakielski</powiat>
+                                        <typAdresu>SWI</typAdresu>
+                                        <ulica>ul. Mickiewicza</ulica>
+                                        <wojewodztwo>KUJAWSKO-POMORSKIE</wojewodztwo>
+                                    </adres>
+                                    <daneKontaktowe>
+                                        <email/>
+                                        <telefon>52 38 52 194</telefon>
+                                        <www>www.nowyszpital.pl</www>
+                                    </daneKontaktowe>
+                                    <idAdresu root="root" extension="extension">id</idAdresu>
+                                </adresUdzielaniaSwiadczen>
+                            </adresyUdzielaniaSwiadczen>
+                        </rodzajDzialalnosci>
+                    </rodzajeDzialalnosci>
+                </osoba>
+            </osoby>
+        </praktyka>
+    </uslugodawca>
+</uslugodawcy>

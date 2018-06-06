@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 11:13:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.SpecjalnoscKomorkiOrganizacyjnej" table="SPECJALNOSCKOMORKIORGANIZACYJNEJ">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+            	<param name="sequence">specjalnosckomorkiorganizacyjnej_id_seq</param>
+            </generator>
+        </id>
+        <property name="kodSpecjalnosci" type="java.lang.Integer">
+            <column name="KODSPECJALNOSCI" length="50" />
+        </property>
+        <property name="nazwaSpecjalnosci" type="java.lang.String">
+            <column name="NAZWASPECJALNOSCI" length="256" />
+        </property>
+        <many-to-one name="komorkaOrganizacyjna" class="smz.zgl.daneref.ud.KomorkaOrganizacyjna" fetch="join">
+            <column name="ID_KOMORKA_ORGANIZACYJNA" index="SPECJALNOSCKOMORKIORGANIZACYJNEJ_ID_KOMORKA_ORGANIZACYJNA_INDEX" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

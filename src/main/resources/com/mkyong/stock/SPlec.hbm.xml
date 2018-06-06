@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="smz.defSlownikow.slowniki.SPlec" table="SPLEC" check="AKTUALNY IS NULL OR AKTUALNY = true">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity">
+                <param name="sequence">splec_id_seq</param>
+            </generator>
+        </id>
+        <property name="kod" type="java.lang.String" unique-key="splec_aktualny_kod_unique">
+            <column name="KOD" index="SPLEC_KOD_INDEX" />
+        </property>
+        <property name="nazwa" type="java.lang.String">
+            <column name="NAZWA" index="SPLEC_NAZWA_INDEX" />
+        </property>
+        <property name="wersjaSlownika" type="java.lang.Integer">
+            <column name="WERSJA" default="1" />
+        </property>
+        <property name="aktualny" type="java.lang.Boolean" unique-key="splec_aktualny_kod_unique">
+            <column name="AKTUALNY" index="SPLEC_AKTUALNY_INDEX" default="TRUE"/>
+        </property>
+    </class>
+</hibernate-mapping>

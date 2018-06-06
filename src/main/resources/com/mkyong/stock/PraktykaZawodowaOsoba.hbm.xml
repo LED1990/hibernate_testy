@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 12:29:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.PraktykaZawodowaOsoba" table="PRAKTYKAZAWODOWAOSOBA">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+                <param name="sequence">praktykazawodowaosoba_id_seq</param>
+            </generator>
+        </id>
+        <property name="tytul" type="java.lang.String">
+            <column name="TYTUL" />
+        </property>
+        <property name="nip" type="java.lang.String">
+            <column name="NIP" />
+        </property>
+        <property name="nrPWZ" type="java.lang.String">
+            <column name="NRPWZ" />
+        </property>
+        <property name="specjalizacje" type="java.lang.String" length="1000">
+            <column name="SPECJALIZACJE" length="256" />
+        </property>
+        <many-to-one name="daneOsobowe" class="smz.zgl.daneref.DaneOsobowe" fetch="join" cascade="all" lazy="false">
+            <column name="DANEOSOBOWE" index="PRAKTYKAZAWODOWAOSOBA_DANEOSOBOWE_INDEX" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

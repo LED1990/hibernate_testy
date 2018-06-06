@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-15 23:08:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.daneref.ud.KomorkaOrganizacyjna" table="KOMORKAORGANIZACYJNA">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+                <param name="sequence">komorkaorganizacyjna_id_seq</param>
+            </generator>
+        </id>
+        <property name="kodKomorki" type="java.lang.String">
+            <column name="KODKOMORKI" length="50" index="KOMORKAORGANIZACYJNA_KODKOMORKI_INDEX" />
+        </property>
+        <property name="nazwaKomorki" type="java.lang.String">
+            <column name="NAZWAKOMORKI" length="256" />
+        </property>
+        <property name="status">
+            <column name="status" not-null="true" default="'AKTUALNY'" />
+            <type name="org.hibernate.type.EnumType">
+                <param name="type">12</param>
+                <param name="enumClass">smz.zgl.daneref.ud.Status</param>
+            </type>
+        </property>
+        <property name="idKomorki" type="java.lang.Integer">
+            <column name="idKomorki" />
+        </property>
+        <set name="specjalnoscKomorkiOrganizacyjnej" inverse="false" table="SPECJALNOSCKOMORKIORGANIZACYJNEJ" lazy="false" fetch="join" cascade="all">
+            <key>
+                <column name="ID_KOMORKA_ORGANIZACYJNA" />
+            </key>
+            <one-to-many class="smz.zgl.daneref.ud.SpecjalnoscKomorkiOrganizacyjnej" />
+        </set>
+        <many-to-one name="daneKontaktowe" class="smz.zgl.daneref.DaneKontaktowe" fetch="join" lazy="false" cascade="all">
+            <column name="DANEKONTAKTOWE" index="KOMORKAORGANIZACYJNA_DANEKONTAKTOWE_INDEX" />
+        </many-to-one>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" lazy="false" cascade="all">
+            <column name="ADRES" index="KOMORKAORGANIZACYJNA_ADRES_INDEX" />
+        </many-to-one>
+        <many-to-one name="jednostkaOrganizacyjna" class="smz.zgl.daneref.ud.JednostkaOrganizacyjna" fetch="join" lazy="false" cascade="all">
+            <column name="ID_JEDNOSTKA_ORGANIZACYJNA" index="KOMORKAORGANIZACYJNA_ID_JEDNOSTKA_ORGANIZACYJNA_INDEX" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

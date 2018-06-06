@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-07-16 14:26:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="smz.zgl.wspolne.Organizacja" table="ORGANIZACJA" check="(AKTUALNY IS NULL OR AKTUALNY = true) AND (POZIOM IN ('P','W','C'))">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" >
+            	<param name="sequence">organizacja_id_seq</param>
+            </generator>
+        </id>
+        <property name="nazwa" type="java.lang.String">
+            <column name="NAZWA" index="ORGANIZACJA_NAZWA_INDEX" />
+        </property>
+<!--         <property name="poziomEnum"> -->
+<!--             <column name="POZIOMENUM" /> -->
+<!--             <type name="org.hibernate.type.EnumType"> -->
+<!--                 <param name="type">12</param> -->
+<!--                 <param name="enumClass">smz.zgl.wspolne.enums.PoziomWOrganizacji</param> -->
+<!--             </type> -->
+<!--         </property> -->
+        <property name="poziom" type="java.lang.String">
+            <column name="POZIOM" index="ORGANIZACJA_POZIOM_INDEX" />
+        </property>
+        <property name="nazwaOrganizacji" type="java.lang.String">
+            <column name="NAZWAORGANIZACJI" />
+        </property>
+        <many-to-one name="adres" class="smz.zgl.daneref.Adres" fetch="join" lazy="false" cascade="all">
+            <column name="ADRES" index="ORGANIZACJA_ADRES_INDEX" />
+        </many-to-one>
+<!--         <many-to-one name="uslugodawca" class="smz.zgl.daneref.ud.Uslugodawca" fetch="join" cascade="merge"> -->
+<!--             <column name="USLUGODAWCA" index="ORGANIZACJA_USLUGODAWCA_INDEX" /> -->
+<!--         </many-to-one> -->
+      <!--   <one-to-one name="organizacjaNadrzedna" class="smz.zgl.wspolne.Organizacja" foreign-key="FK_ORGANIZACJA_NADRZEDNA"  
+        property-ref="id">
+        </one-to-one>constrained="true
+        
+         -->
+        <property name="organizacjaKod" type="java.lang.String">
+            <column name="ORGANIZACJAKOD" index="ORGANIZACJA_ORGANIZACJAKOD_INDEX" />
+        </property>
+        <property name="kod" type="java.lang.String"  unique-key="organizacja_aktualny_kod_unique">
+            <column name="KOD" not-null="true" length="20" index="ORGANIZACJA_KOD_INDEX" />
+        </property>
+         <property name="organizacjaNadrzedna" type="int" update="false"
+            insert="false" column="ORGANIZACJA_NADRZEDNA" length="10"/>
+        <property name="wersjaSlownika" type="java.lang.Integer">
+            <column name="WERSJA" default="1" />
+        </property>
+        <property name="aktualny" type="java.lang.Boolean" unique-key="organizacja_aktualny_kod_unique">
+            <column name="AKTUALNY" default="TRUE" index="ORGANIZACJA_AKTUALNY_INDEX" />
+        </property>
+        
+     	<many-to-one name="organizacja" class="smz.zgl.wspolne.Organizacja" fetch="join" not-null="false">
+            <column name="ORGANIZACJA_NADRZEDNA" not-null="false" index="ORGANIZACJA_ORGANIZACJA_NADRZEDNA_INDEX" />
+        </many-to-one>
+     <set name="organizacjePodrzedne" table="Organizacja"  fetch="join" cascade="all-delete-orphan" 
+            inverse="false">
+              <key column="ORGANIZACJA_NADRZEDNA" />
+              <one-to-many class="smz.zgl.wspolne.Organizacja"   />
+     </set>
+        
+    </class>
+</hibernate-mapping>
