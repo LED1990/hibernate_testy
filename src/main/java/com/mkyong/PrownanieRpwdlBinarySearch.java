@@ -44,9 +44,9 @@ public class PrownanieRpwdlBinarySearch {
 //        String staryRpwdl = "stary.xml";
 //        String aktualnyRpwdl = "nowy.xml";
 //        String aktualnyRpwdl = "najnowszy.xml";
-        String aktualnyRpwdl = "nowy_zle_id.xml";
+//        String aktualnyRpwdl = "nowy_zle_id.xml";
 //                String staryRpwdl = "starySkrocony.xml";
-//                String aktualnyRpwdl = "nowySkrocony.xml";
+                String aktualnyRpwdl = "nowySkrocony.xml";
 //        app.transformuj(listaPraktykRpwdlStary, staryRpwdl);
         Map<Integer,String> listaKluczy=new HashMap<Integer, String>();
         app.transformuj(listaPraktykRpwdlAktualny, aktualnyRpwdl,listaKluczy);
